@@ -24,16 +24,16 @@
 ## 🛠️ System Overview
 
 The RoadSense device uses:
-- [cite_start]**MPU-6050** IMU for motion detection (3-axis Accelerometer + 3-axis Gyroscope) [cite: 120, 123]
-- [cite_start]**NEO-6M GPS** for velocity and location [cite: 120, 124]
-- [cite_start]**DHT22** for temperature and humidity [cite: 120, 125]
-- [cite_start]**DS3231** RTC for accurate timestamping [cite: 113, 120, 126]
-- [cite_start]**SIM800L GSM** for cloud upload [cite: 126, 151]
-- [cite_start]**MicroSD module** for local data storage [cite: 126, 150]
-- [cite_start]**3 Push buttons** for manual data annotation [cite: 127]
-- [cite_start]**Buzzer** for overspeed warnings [cite: 127, 40]
+- **MPU-6050** IMU for motion detection (3-axis Accelerometer + 3-axis Gyroscope)  
+- **NEO-6M GPS** for velocity and location  
+- **DHT22** for temperature and humidity  
+- **DS3231** RTC for accurate timestamping  
+- **SIM800L GSM** for cloud upload  
+- **MicroSD module** for local data storage  
+- **3 Push buttons** for manual data annotation  
+- **Buzzer** for overspeed warnings  
 
-[cite_start]A dual-microcontroller setup (Arduino Mega 2560 as master and Arduino Pro Mini as slave) is employed to manage communication challenges, such as shared I2C addresses, and ensure reliable data acquisition. [cite: 128, 146, 152]
+A dual-microcontroller setup (Arduino Mega 2560 as master and Arduino Pro Mini as slave) is employed to manage communication challenges, such as shared I2C addresses, and ensure reliable data acquisition.
 
 ---
 
@@ -60,18 +60,20 @@ Ensure you install the following libraries in your Arduino IDE before compiling:
 
 ### 4. Data Logging Format
 Data is logged in CSV format and includes the following columns:
-[cite_start]`Accel_x`, `Accel_y`, `Accel_z` (3-axis Accelerometer values) [cite: 197]
-[cite_start]`Gyro_x`, `Gyro_y`, `Gyro_z` (3-axis Gyroscope values) [cite: 197]
-[cite_start]`Pothole`, `Hard_brake`, `Speed_breaker` (Annotation flags: `1` for occurrence, `0` for absence) [cite: 197, 198]
-[cite_start]`latt`, `long` (Latitude, Longitude from GPS) [cite: 201]
-[cite_start]`speed` (Vehicle speed in km/h) [cite: 201, 206]
-[cite_start]`hum`, `temp` (Humidity and Temperature) [cite: 201]
+- `Accel_x`, `Accel_y`, `Accel_z` (3-axis Accelerometer values)  
+- `Gyro_x`, `Gyro_y`, `Gyro_z` (3-axis Gyroscope values)  
+- `Pothole`, `Hard_brake`, `Speed_breaker` (Annotation flags: `1` for occurrence, `0` for absence)  
+- `latt`, `long` (Latitude, Longitude from GPS)  
+- `speed` (Vehicle speed in km/h)  
+- `hum`, `temp` (Humidity and Temperature)  
 
 ---
 
 ## 📡 Cloud Communication (Optional)
 
-[cite_start]The SIM800L GSM module facilitates data transfer to a cloud server using the MQTT protocol. [cite: 151, 202] [cite_start]All communications are secured by TLS Version 1.3 and AES-based cryptographic algorithms. [cite: 239, 240] [cite_start]The cloud server only accepts requests from registered MAC addresses to minimize external attacks. [cite: 242]
+The SIM800L GSM module facilitates data transfer to a cloud server using the MQTT protocol.  
+All communications are secured by TLS Version 1.3 and AES-based cryptographic algorithms.  
+The cloud server only accepts requests from registered MAC addresses to minimize external attacks.
 
 ---
 
@@ -81,7 +83,9 @@ The dataset collected during the RoadSense project test runs is available **upon
 
 If you are using our dataset or building upon this work, please feel free to cite our research paper:
 
-> **RoadSense: A Framework for Road Condition Monitoring using Sensors and Machine Learning** > *IEEE Transactions on Intelligent Vehicles, 2024* > [DOI: 10.1109/TIV.2024.3486020](https://doi.org/10.1109/TIV.2024.3486020)
+> **RoadSense: A Framework for Road Condition Monitoring using Sensors and Machine Learning**  
+> *IEEE Transactions on Intelligent Vehicles, 2024*  
+> [DOI: 10.1109/TIV.2024.3486020](https://doi.org/10.1109/TIV.2024.3486020)
 
 ### 📚 Suggested Citation (BibTeX)
 
