@@ -8,18 +8,6 @@
 
 ---
 
-## 📦 Repository Contents
-
-| Folder/File           | Description                                          |
-|-----------------------|------------------------------------------------------|
-| `code/`               | Arduino code for master (Mega) and slave (Pro Mini) |
-| `hardware/`           | Circuit diagrams, Proteus simulation files          |
-| `docs/`               | System architecture diagrams and flowcharts         |
-| `sample_data/`        | Example CSV dataset (accelerometer, GPS, etc.)      |
-| `parts_list.md`       | Full hardware bill of materials                     |
-| `PAPER_LINK.md`       | Link and citation for the published research paper  |
-
----
 
 ## 🛠️ System Overview
 
