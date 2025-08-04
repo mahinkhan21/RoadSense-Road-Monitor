@@ -28,13 +28,13 @@ A dual-microcontroller setup (Arduino Mega 2560 as master and Arduino Pro Mini a
 ## 🔧 Setup Instructions
 
 ### 1. Wiring & Hardware
-Refer to the `hardware/` folder for detailed wiring diagrams and the Proteus `.pdsprj` simulation file. The `parts_list.md` also contains a comprehensive list of all components.
+Refer to the `hardware/` folder for detail.
 
 ### 2. Code Upload
 - **Master Controller** (Arduino Mega 2560):  
-  Upload the code found in `code/master_controller/master.ino`.
+  Upload the code found in `Master (Mega).ino`.
 - **Slave Controller** (Arduino Pro Mini):  
-  Upload the code found in `code/slave_controller/slave.ino`.
+  Upload the code found in `Slave (Pro Mini).ino`.
 
 ### 3. Required Libraries (Arduino IDE)
 Ensure you install the following libraries in your Arduino IDE before compiling:
