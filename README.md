@@ -69,7 +69,7 @@ Data is logged in CSV format and includes the following columns:
 
 ---
 
-## 📡 Cloud Communication (Optional)
+## 📡 Cloud Communication
 
 The SIM800L GSM module facilitates data transfer to a cloud server using the MQTT protocol.  
 All communications are secured by TLS Version 1.3 and AES-based cryptographic algorithms.  
